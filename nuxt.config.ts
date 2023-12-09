@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: {
         lang: 'en',
-      }
+      },
+      meta: [{ name: 'google-site-verification', content: '6WcTKGtmiFOZFJEG5jf501X7P8bxHkto5EQe6WNn9RY' }]
     }
   },
   colorMode: {

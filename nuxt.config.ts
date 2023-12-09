@@ -2,8 +2,18 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  ssr: true,
+  nitro: {
+    minify: true,
+    static: true,
+  },
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      }
+    }
   },
   colorMode: {
     classSuffix: ''
@@ -23,6 +33,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  site: {
+    url: 'https://mattiecarlylelegacy.com/',
+  },
 
-  modules: ["@nuxt/image", "@nuxtjs/color-mode", 'radix-vue/nuxt', '@nuxtjs/supabase']
+  modules: ["@nuxt/image", "@nuxtjs/color-mode", 'radix-vue/nuxt', '@nuxtjs/supabase', 'nuxt-simple-sitemap', 'nuxt-simple-robots', 'nuxt-link-checker']
 })

@@ -1,27 +1,32 @@
 <template>
     <transition :name="'slide-out'">
-        <NuxtImg v-show="props.index === 0" class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip"
-            format="webp" src="/images/home-carousel/1.jpg" alt="slide" />
+        <NuxtImg v-show="props.index === 0"
+            class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip" format="webp" width="800"
+            src="/images/home-carousel/1.jpg" alt="slide" />
     </transition>
 
     <transition :name="'slide-out'">
-        <NuxtImg v-show="props.index === 1" class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip"
-            format="webp" src="/images/home-carousel/2.png" alt="slide" />
+        <NuxtImg v-show="props.index === 1"
+            class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip" format="webp" width="800"
+            src="/images/home-carousel/2.png" alt="slide" />
     </transition>
 
     <transition :name="'slide-out'">
-        <NuxtImg v-show="props.index === 2" class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip"
-            format="webp" src="/images/home-carousel/3.png" alt="slide" />
+        <NuxtImg v-show="props.index === 2"
+            class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip" format="webp" width="800"
+            src="/images/home-carousel/3.png" alt="slide" />
     </transition>
 
     <transition :name="'slide-out'">
-        <NuxtImg v-show="props.index === 3" class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip"
-            format="webp" src="/images/home-carousel/4.jpg" alt="slide" />
+        <NuxtImg v-show="props.index === 3"
+            class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip" format="webp" width="800"
+            src="/images/home-carousel/4.jpg" alt="slide" />
     </transition>
 
     <transition :name="'slide-out'">
-        <NuxtImg v-show="props.index === 4" class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip"
-            format="webp" src="/images/home-carousel/5.jpg" alt="slide" />
+        <NuxtImg v-show="props.index === 4"
+            class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip" format="webp" width="800"
+            src="/images/home-carousel/5.jpg" alt="slide" />
     </transition>
 </template>
 
@@ -56,5 +61,4 @@ const props = defineProps(['slide', "currentSlide", 'index', 'direction'])
 .slide-out-leave-to {
     /*  transform: translate(-100%); */
     opacity: 0%;
-}
-</style>
+}</style>

@@ -1,8 +1,8 @@
 <template>
     <transition :name="'slide-out'">
         <NuxtImg v-show="props.index === 0"
-            class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip" format="webp" width="800"
-            src="/images/home-carousel/1.jpg" alt="slide" />
+            class="h-full w-full rounded-xl object-cover object-center absolute overflow-x-clip" format="webp" height="719"
+            width="934" src="/images/home-carousel/1.jpg" alt="slide" />
     </transition>
 
     <transition :name="'slide-out'">
@@ -61,4 +61,5 @@ const props = defineProps(['slide', "currentSlide", 'index', 'direction'])
 .slide-out-leave-to {
     /*  transform: translate(-100%); */
     opacity: 0%;
-}</style>
+}
+</style>

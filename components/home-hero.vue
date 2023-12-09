@@ -25,8 +25,8 @@
         </div>
         <div class="w-full mt-10 lg:mt-0">
             <div class="w-full aspect-video">
-                <NuxtImg format="webp" quality="80" height="444" width="800" src="/images/home-carousel/Mattie_Carlye_1.jpg" alt="Lee Carlyle"
-                    class="w-full h-full  object-contain rounded-xl" />
+                <NuxtImg format="webp" quality="80" height="719" width="934" src="/images/home-carousel/Mattie_Carlye_1.jpg"
+                    alt="Lee Carlyle" class="w-full h-full  object-contain rounded-xl" />
             </div>
         </div>
     </div>

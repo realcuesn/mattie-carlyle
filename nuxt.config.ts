@@ -13,6 +13,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
+      script: [
+        {
+          async: true,
+          src: 'https://us.umami.is/script.js',
+          'data-website-id': '6857da96-70a0-4516-af51-23e9f4a5525c',
+        },
+      ],
       meta: [{ name: 'google-site-verification', content: '6WcTKGtmiFOZFJEG5jf501X7P8bxHkto5EQe6WNn9RY' }]
     }
   },
